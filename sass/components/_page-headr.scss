@@ -1,0 +1,220 @@
+.page {
+  position: relative;
+}
+.headrmenu {
+  display: flex;
+  @media screen and(max-width:767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+
+    & .menu-button {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    background-color: chartreuse;
+  }
+}
+.headrline {
+  height: 60px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.logo {
+  margin-right: 93px;
+  color: var(--accent);
+
+  font-family: raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--black);
+  }
+  @media screen and (max-width: 768px) {
+    margin-right: 0px;
+  }
+}
+.black {
+  color: var(--black);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+.menu-button {
+  display: inline-flex;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background-color: transparent;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent);
+  }
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button .icon-menu {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  &.is-open {
+    display: block;
+    z-index: 2;
+  }
+  @media screen and (max-width: 767px) {
+    height: 796px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.menu-container .is-open {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: block;
+}
+.site-navig {
+  &:first-child {
+    @media screen and(max-width:767) {
+      margin-bottom: 300px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  & .current {
+    color: var(--accent);
+  }
+}
+.site-navigtm {
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.item {
+  @media screen and(min-width:768px) {
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    &:first-child {
+      padding-left: 0px;
+    }
+  }
+}
+
+.itemsvg {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.link {
+  display: block;
+  padding-top: 32px;
+
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+  @media screen and (max-width: 767px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+}
+.telmailto {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+    fill: var(--accent);
+    font-size: 34px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+  }
+}
+.soctext {
+  padding-top: 32px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.soc-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+
+  color: var(--accent);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  &:last-child {
+    border-right: none;
+  }
+}

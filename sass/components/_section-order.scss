@@ -1,0 +1,99 @@
+.section-order {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/fonmobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primery-text-color);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  text-align: center;
+}
+@media screen and(min-device-pixel-ratio:2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-order {
+    background-image: url("../image/fonmobile2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-order {
+    background-image: url("../image/fontablet.jpg");
+  }
+  @media screen and(min-device-pixel-ratio:2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-order {
+      background-image: url("../image/fontablet2x.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .section-order {
+      background-image: url("../image/fondesctop.jpg");
+    }
+    @media screen and(min-device-pixel-ratio:2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .section-order {
+        background-image: url("../image/fondesctop2x.jpg");
+      }
+    }
+  }
+}
+.conteinermenu {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.accentpage {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white);
+  max-width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  border: 0px;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &.primery {
+    color: var(--white);
+    background-color: var(--accent);
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  }
+}

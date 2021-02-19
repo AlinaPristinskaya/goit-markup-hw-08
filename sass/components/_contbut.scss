@@ -1,0 +1,46 @@
+.portfoliomain {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+}
+.headerbord {
+  border-bottom: #eeeeee 1px solid;
+}
+.contbutton {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+  }
+}
+.contboot {
+  margin-bottom: 50px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
+.filtr {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.site-nav .filtr:last-child {
+  margin-right: 0px;
+}
+.button.portfolio:hover,
+.button.portfolio:focus {
+  color: var(--white);
+  background-color: var(--accent);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,68 @@
+.aboutus {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.section-discription {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.secondary {
+  color: var(--black);
+  background-color: #f5f4fa;
+}
+
+.flexem {
+  position: relative;
+  margin-right: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 370px;
+  height: 294px;
+
+  @media screen and (max-width: 768px) {
+    width: 450px;
+  }
+}
+.section-discription .flexem:last-child {
+  margin-right: 0px;
+}
+.img {
+  display: block;
+}
+
+.discription {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.scenery::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../image/antenna.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bgcolor);
+  margin-bottom: 30px;
+}
+.scenery:nth-child(2)::before {
+  background-image: url(../image/clock.svg);
+}
+.scenery:nth-child(3)::before {
+  background-image: url(../image/diagram.svg);
+}
+.scenery:nth-child(4)::before {
+  background-image: url(../image/astronaut.svg);
+}
+.flexem .scenery {
+  padding-left: auto;
+  padding-right: auto;
+}
