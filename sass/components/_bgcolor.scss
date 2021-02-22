@@ -1,10 +1,26 @@
+.bgcolor {
+  background-color: #afb1b8;
+}
 .zag {
-  margin-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  margin: 0px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.site-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .profession {
   margin-top: 0px;
@@ -46,35 +62,30 @@
   padding-right: 0px;
   padding-bottom: 30px;
   margin-right: 0px;
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
-  }
-  @media screen and (min-width: 768) and(max-width:1199px) {
-    width: 50%;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 25%;
-  }
 }
 .piople {
   padding-right: 0px;
   padding-left: 0px;
-  margin-top: 30px;
-  &:first-child {
-    margin-top: 0px;
-  }
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
-.site-nav .piople:last-child {
-  margin-right: 0px;
-}
-.site-nav {
-  justify-content: space-between;
-  padding-bottom: 60px;
-}
+
 .socseti {
   display: flex;
   list-style: none;

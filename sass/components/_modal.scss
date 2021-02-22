@@ -13,18 +13,24 @@
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   width: 528px;
   height: 581px;
   background-color: var(--white);
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
+    top: 30%;
     width: 450px;
     margin-top: 93px;
     margin-bottom: 93px;
-    height: auto;
+    height: 609px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    top: 42%;
+    width: 450px;
+    height: 612px;
   }
 }
 .current::after {
@@ -170,7 +176,7 @@
 
   color: var(--secondary-text-color);
   padding-top: 40px;
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:1199px) {
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 0px;

@@ -44,19 +44,7 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
-  }
-}
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 0px;
-  @media screen and (max-width: 768px) {
-    display: block;
   }
 }

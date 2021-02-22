@@ -8,39 +8,47 @@
 }
 .section-discription {
   list-style: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
   padding: 0px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.flexem {
+  position: relative;
+
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 0px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.img {
+  display: block;
 }
 .secondary {
   color: var(--black);
   background-color: #f5f4fa;
 }
-
-.flexem {
-  position: relative;
-  margin-right: 30px;
-  padding-right: 0px;
-  padding-left: 0px;
-  width: 370px;
-  height: 294px;
-
-  @media screen and (max-width: 768px) {
-    width: 450px;
-  }
-}
-.section-discription .flexem:last-child {
-  margin-right: 0px;
-}
-.img {
-  display: block;
-}
-
 .discription {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
 }
 .scenery::before {
   display: block;
@@ -52,6 +60,8 @@
   background-position: center;
   background-color: var(--secondary-bgcolor);
   margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .scenery:nth-child(2)::before {
   background-image: url(../image/clock.svg);
