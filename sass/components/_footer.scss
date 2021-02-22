@@ -6,10 +6,17 @@
 
 .contact {
   display: flex;
-  justify-content: space-between;
+
   @media screen and(max-width:767px) {
     display: block;
     text-align: center;
+  }
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
   }
 }
 .footeradres {
@@ -17,6 +24,10 @@
   @media screen and(max-width:767px) {
     margin-right: 0px;
     margin-bottom: 60px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-right: 0px;
+    width: 50%;
   }
 }
 .footerlink {
@@ -26,6 +37,10 @@
     padding-top: 0px;
     margin-right: 0px;
     margin-bottom: 60px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    width: 50%;
+    margin-right: 0px;
   }
 }
 
@@ -151,53 +166,54 @@
     align-items: center;
   }
 }
-.subscription {
+.subscriptionfoot {
   padding-top: 12px;
   display: flex;
   flex-direction: column;
   width: 370px;
   justify-content: center;
+
   @media screen and (max-width: 767px) {
     display: block;
-    padding-top: 0px;
-    margin-right: 0px;
-  }
-
-  .script {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-  }
-  .inputmail {
-    width: 358px;
-    height: 48px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    margin-right: 12px;
-    padding-left: 15px;
-    background-color: transparent;
-    color: var(--whiitetrans);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    @media screen and(max-width:767px) {
-      padding-left: 0px;
-    }
+    width: 100%;
   }
 }
 
+.script {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.inputmail {
+  width: 358px;
+  height: 48px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 12px;
+  padding-left: 15px;
+  background-color: transparent;
+  color: var(--whiitetrans);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscriptionfoot .inputmail {
+  @media screen and(max-width:479px) {
+    width: 100%;
+  }
+}
 .but {
   padding-bottom: 12px;
 
