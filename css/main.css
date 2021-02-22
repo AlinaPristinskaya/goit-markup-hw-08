@@ -681,6 +681,7 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 0px;
+  margin: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -715,26 +716,21 @@ a {
 }
 
 .card {
-  border: #eeeeee 1px solid;
-  padding-top: 30px;
   padding-left: 24px;
-  padding-bottom: 20px;
   padding-right: 24px;
 }
 
 .card-comand {
   display: block;
-  border: #eeeeee 1px solid;
-  padding-top: 0px;
+  padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--white);
 }
 
 .imgport-comand {
   display: block;
-  padding-right: 0px;
-  padding-bottom: 30px;
-  margin-right: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .piople {
