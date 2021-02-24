@@ -1,27 +1,21 @@
 .portfoliomain {
   padding-top: 94px;
   padding-bottom: 94px;
-  @media screen and (max-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 0px;
-  }
 }
 .headerbord {
   border-bottom: #eeeeee 1px solid;
 }
 .contbutton {
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 468px) {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0px;
   }
-}
-.contboot {
-  margin-bottom: 50px;
-  @media screen and (max-width: 768px) {
-    margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
+
 .filtr {
   margin-right: 8px;
   margin-bottom: 15px;
