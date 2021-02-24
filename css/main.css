@@ -1017,9 +1017,7 @@ a {
   .footeradres {
     margin-right: 0px;
     width: 50%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: center;
   }
 }
 
@@ -1040,6 +1038,8 @@ a {
   .footerlink {
     width: 50%;
     margin-right: 0px;
+    text-align: center;
+    padding-top: 0px;
   }
 }
 
@@ -1050,6 +1050,12 @@ a {
 @media screen and (max-width: 767px) {
   .footersubscription {
     padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footersubscription {
+    padding-top: 60px;
   }
 }
 
@@ -1128,7 +1134,7 @@ a {
   padding-top: 0px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .join {
     margin-bottom: 20px;
   }
@@ -1144,7 +1150,7 @@ a {
   padding-bottom: 0px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footericon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1241,6 +1247,12 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .script {
+    text-align: center;
+  }
 }
 
 .inputmail {
@@ -1392,16 +1404,6 @@ a {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.footersubscription {
-  padding-top: 12px;
-}
-
-@media screen and (max-width: 768px) {
-  .footersubscription {
-    padding-top: 0px;
-  }
-}
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1511,9 +1513,8 @@ a {
   margin-right: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .formmodal {
-    width: 100%;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -1523,6 +1524,12 @@ a {
   .formmodal {
     padding-left: 3px;
     padding-right: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formmodal {
+    width: 100%;
   }
 }
 

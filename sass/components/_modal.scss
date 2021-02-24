@@ -63,12 +63,6 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.footersubscription {
-  padding-top: 12px;
-  @media screen and (max-width: 768px) {
-    padding-top: 0px;
-  }
-}
 .form {
   display: flex;
   align-items: flex-end;
@@ -142,14 +136,16 @@
   width: 448px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 767px) {
-    width: 100%;
+  @media screen and (min-width: 480px) {
     padding-left: 40px;
     padding-right: 40px;
   }
   @media screen and(max-width:479px) {
     padding-left: 3px;
     padding-right: 3px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
   }
 }
 .butclose {

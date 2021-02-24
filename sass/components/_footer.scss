@@ -28,6 +28,7 @@
   @media screen and(min-width:768px) and(max-width:1199px) {
     margin-right: 0px;
     width: 50%;
+    text-align: center;
   }
 }
 .footerlink {
@@ -41,6 +42,8 @@
   @media screen and(min-width:768px) and(max-width:1199px) {
     width: 50%;
     margin-right: 0px;
+    text-align: center;
+    padding-top: 0px;
   }
 }
 
@@ -48,6 +51,9 @@
   padding-top: 12px;
   @media screen and (max-width: 767px) {
     padding-top: 0px;
+  }
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    padding-top: 60px;
   }
 }
 .logotip {
@@ -115,7 +121,7 @@
 
   color: #ffffff;
   padding-top: 0px;
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:1199px) {
     margin-bottom: 20px;
   }
 }
@@ -125,7 +131,7 @@
   padding-left: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     justify-content: center;
   }
 }
@@ -189,6 +195,9 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .inputmail {
   width: 358px;
