@@ -1473,6 +1473,12 @@ a {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .inputmail {
+    margin-bottom: 0px;
+  }
+}
+
 .but {
   padding-bottom: 12px;
 }
