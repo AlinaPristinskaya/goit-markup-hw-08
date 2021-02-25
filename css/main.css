@@ -949,13 +949,13 @@ a {
   width: 100%;
 }
 
-.clients {
+.section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 @media screen and (max-width: 767px) {
-  .clients {
+  .section-clients {
     padding-top: 60px;
     padding-bottom: 60px;
   }
