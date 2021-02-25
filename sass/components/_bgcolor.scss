@@ -1,7 +1,20 @@
 .section-team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+.piople {
+  width: 100%;
+  display: block;
+  padding: 0px;
+  margin: 0px;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 .profession {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -33,13 +46,8 @@
     background-color: var(--white);
   }
 }
-.piople-foto {
-  width: 100%;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-}
-.piople {
+
+.piople-elem {
   padding-right: 0px;
   padding-left: 0px;
 
@@ -60,6 +68,9 @@
       margin-bottom: 30px;
     }
   }
+}
+.piople-foto {
+  width: 100%;
 }
 
 .socseti {
@@ -95,16 +106,4 @@
 }
 .img {
   width: 100%;
-}
-.piople-foto {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 0px;
-  margin: 0px;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
 }

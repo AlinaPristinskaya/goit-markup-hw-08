@@ -74,7 +74,6 @@ a {
 
 .zag {
   padding-bottom: 30px;
-  padding-top: 60px;
   margin: 0px;
   font-weight: bold;
   font-size: 36px;
@@ -815,6 +814,26 @@ a {
 
 .section-team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.piople {
+  width: 100%;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .piople {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .profession {
@@ -849,14 +868,7 @@ a {
   background-color: var(--white);
 }
 
-.piople-foto {
-  width: 100%;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-}
-
-.piople {
+.piople-elem {
   padding-right: 0px;
   padding-left: 0px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -865,22 +877,26 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .piople {
+  .piople-elem {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .piople {
+  .piople-elem {
     width: calc((100% - 8 * 15px) / 4);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .piople:not(:last-child) {
+  .piople-elem:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+.piople-foto {
+  width: 100%;
 }
 
 .socseti {
@@ -931,24 +947,6 @@ a {
 
 .img {
   width: 100%;
-}
-
-.piople-foto {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 0px;
-  margin: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .piople-foto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
 }
 
 .clients {
