@@ -1,4 +1,4 @@
-.aboutus {
+.section-aboutus {
   padding-top: 94px;
   padding-bottom: 94px;
   @media screen and (max-width: 768px) {
@@ -6,7 +6,7 @@
     padding-bottom: 60px;
   }
 }
-.section-discription {
+.specification {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -18,7 +18,7 @@
   }
 }
 
-.flexem {
+.specification-elem {
   position: relative;
 
   padding-right: 0px;
@@ -40,6 +40,20 @@
   }
 }
 
+.elem-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
 .img {
   display: block;
 }
@@ -47,7 +61,7 @@
   color: var(--black);
   background-color: #f5f4fa;
 }
-.discription {
+.elem-discription {
   margin: 0px;
 }
 .scenery::before {

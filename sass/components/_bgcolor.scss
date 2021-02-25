@@ -1,29 +1,7 @@
-.bgcolor {
-  background-color: #afb1b8;
+.section-team {
+  background-color: #f5f4fa;
 }
-.zag {
-  padding-bottom: 30px;
-  padding-top: 60px;
-  margin: 0px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-.site-nav {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 0px;
-  margin: 0px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
 .profession {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -55,7 +33,7 @@
     background-color: var(--white);
   }
 }
-.imgport-comand {
+.piople-foto {
   width: 100%;
   display: block;
   padding: 0px;
@@ -114,4 +92,19 @@
 
 .grey {
   fill: currentColor;
+}
+.img {
+  width: 100%;
+}
+.piople-foto {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  margin: 0px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }

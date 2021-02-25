@@ -1,7 +1,7 @@
 .page {
   position: relative;
 }
-.headrmenu {
+.headermenu {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
     }
   }
 }
-.headrline {
+.headr-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@
     margin-right: 0px;
   }
 }
-.black {
+.logo-black {
   color: var(--black);
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -97,14 +97,14 @@
 .menu-button .icon-cross {
   display: none;
 }
-.soctext {
+.social {
   padding-top: 32px;
   padding-bottom: 48px;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.soc-text {
+.social-text {
   padding-left: 10px;
   padding-right: 10px;
   font-family: Roboto;
@@ -149,7 +149,7 @@
     padding-top: 32px;
   }
 }
-.site-navig .current {
+.navigation .current {
   @media screen and(min-width:768px) {
     color: var(--accent);
     position: relative;
@@ -157,7 +157,7 @@
 
   &::after {
     position: absolute;
-    bottom: -30px;
+    bottom: -31px;
     right: 0px;
     content: "";
     height: 4px;
@@ -190,7 +190,7 @@
   }
 }
 
-.site-navig {
+.navigation {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -208,7 +208,7 @@
     }
   }
 }
-.site-navigtm {
+.contacts {
   display: flex;
   justify-content: center;
   @media screen and (max-width: 1199px) {
@@ -219,7 +219,7 @@
     align-items: center;
   }
 }
-.items {
+.contact-items {
   @media screen and (min-width: 1200px) {
     padding-right: 30px;
   }
@@ -227,7 +227,7 @@
     font-size: 24px;
   }
 }
-.telmailto {
+.contact-items-telmailto {
   display: inline-flex;
   align-items: center;
   color: var(--primery-text-color);
