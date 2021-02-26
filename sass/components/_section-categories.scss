@@ -28,7 +28,7 @@
 .flexemp {
   position: absolute;
   display: flex;
-  bottom: 0px;
+  bottom: 7px;
   justify-content: center;
   align-items: center;
   right: 0px;
@@ -70,4 +70,7 @@
   padding: 0px;
   margin: 15px;
   width: calc((100% - 6 * 15px) / 3);
+}
+.categories-title {
+  margin-bottom: 60px;
 }

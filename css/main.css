@@ -72,17 +72,6 @@ a {
   }
 }
 
-.zag {
-  padding-bottom: 30px;
-  margin: 0px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
 .site-nav {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -506,31 +495,37 @@ a {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-order {
-    background-image: url("../image/fonmobile2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/fonmobile2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/fonmobile2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-order {
-    background-image: url("../image/fontablet.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/fontablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/fontablet.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-order {
-    background-image: url("../image/fontablet2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/fontablet2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/fontablet2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .section-order {
-    background-image: url("../image/fondesctop.jpg");
+    min-height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/fondesctop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/fondesctop.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-order {
-    background-image: url("../image/fondesctop2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/fondesctop2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/fondesctop2x.jpg");
   }
 }
 
@@ -539,6 +534,13 @@ a {
   padding-bottom: 118px;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .conteinermenu {
+    padding-top: 203px;
+    padding-bottom: 203px;
+  }
 }
 
 .accentpage {
@@ -757,7 +759,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 0px;
+  bottom: 7px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -810,6 +812,10 @@ a {
   padding: 0px;
   margin: 15px;
   width: calc((100% - 6 * 15px) / 3);
+}
+
+.categories-title {
+  margin-bottom: 60px;
 }
 
 .section-team {
@@ -947,6 +953,23 @@ a {
 
 .img {
   width: 100%;
+}
+
+.zag {
+  padding-bottom: 30px;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .zag {
+    padding-bottom: 60px;
+  }
 }
 
 .section-clients {
@@ -1897,6 +1920,7 @@ textarea::-webkit-input-placeholder {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+  border: 1px solid #eeeeee;
 }
 
 .product:hover, .product:focus {
@@ -2009,6 +2033,7 @@ textarea::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  padding-bottom: 15px;
 }
 
 .gallery {
@@ -2029,6 +2054,17 @@ textarea::-webkit-input-placeholder {
         flex-wrap: wrap;
     margin: -15px;
   }
+}
+
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-left: 0px;
 }
 
 .portfoliomain {

@@ -2,6 +2,7 @@
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  border: 1px solid #eeeeee;
 
   &:hover,
   &:focus {
@@ -95,6 +96,7 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  padding-bottom: 15px;
 }
 .gallery {
   padding-top: 60px;
@@ -108,4 +110,15 @@
     flex-wrap: wrap;
     margin: -15px;
   }
+}
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-left: 0px;
 }

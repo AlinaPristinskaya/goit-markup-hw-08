@@ -16,33 +16,61 @@
   align-items: center;
   text-align: center;
 }
+
 @media screen and(min-device-pixel-ratio:2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .section-order {
-    background-image: url("../image/fonmobile2x.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../image/fonmobile2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .section-order {
-    background-image: url("../image/fontablet.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../image/fontablet.jpg");
   }
   @media screen and(min-device-pixel-ratio:2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .section-order {
-      background-image: url("../image/fontablet2x.jpg");
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../image/fontablet2x.jpg");
     }
   }
+
   @media screen and (min-width: 1200px) {
     .section-order {
-      background-image: url("../image/fondesctop.jpg");
+      min-height: 600px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../image/fondesctop.jpg");
     }
     @media screen and(min-device-pixel-ratio:2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .section-order {
-        background-image: url("../image/fondesctop2x.jpg");
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../image/fondesctop2x.jpg");
       }
     }
   }
@@ -52,6 +80,10 @@
   padding-bottom: 118px;
   padding-left: 60px;
   padding-right: 60px;
+  @media screen and(min-width:1200px) {
+    padding-top: 203px;
+    padding-bottom: 203px;
+  }
 }
 .accentpage {
   margin-top: 0px;
