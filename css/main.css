@@ -133,7 +133,7 @@ a {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 20px;
     width: 100%;
   }
   .menu-container.is-open {
@@ -532,8 +532,15 @@ a {
 .conteinermenu {
   padding-top: 118px;
   padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .conteinermenu {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -557,7 +564,7 @@ a {
   letter-spacing: 0.06em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .accentpage {
     font-size: 26px;
     line-height: 1.61;
@@ -2036,10 +2043,6 @@ textarea::-webkit-input-placeholder {
   padding-bottom: 15px;
 }
 
-.gallery {
-  padding-top: 60px;
-}
-
 .gallery-nav {
   padding: 0px;
   margin: 0px;
@@ -2072,11 +2075,22 @@ textarea::-webkit-input-placeholder {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .portfoliomain {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .headerbord {
   border-bottom: #eeeeee 1px solid;
 }
 
-@media screen and (min-width: 468px) {
+.contbutton {
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 480px) {
   .contbutton {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2092,6 +2106,13 @@ textarea::-webkit-input-placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contbutton {
+    padding-bottom: 45px;
   }
 }
 

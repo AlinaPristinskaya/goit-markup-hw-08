@@ -78,8 +78,13 @@
 .conteinermenu {
   padding-top: 118px;
   padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  @media screen and(min-width:768px) {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
   @media screen and(min-width:1200px) {
     padding-top: 203px;
     padding-bottom: 203px;
@@ -99,7 +104,7 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.61;
   }
