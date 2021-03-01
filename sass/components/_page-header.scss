@@ -98,8 +98,8 @@
   display: none;
 }
 .social {
-  padding-top: 32px;
-  padding-bottom: 48px;
+  display: flex;
+  justify-content: space-around;
   @media screen and (min-width: 768px) {
     display: none;
   }
