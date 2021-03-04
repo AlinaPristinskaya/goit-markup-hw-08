@@ -26,13 +26,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
-    height: 100vp;
-    transform: translateX(-50%), translateY(100%);
-  }
-  &.is-open {
-    display: block;
-    transform: translateX(-50%), translateY(0);
+    z-index: 99;
+    height: 100vh;
+    transform: translateX(-50%);
+    transform: translateY(100%);
+    background-color: var(--white);
+    &.is-open {
+      display: block;
+      transform: translateY(0);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -79,6 +81,7 @@
   border: none;
   background-color: transparent;
   fill: currentColor;
+  z-index: 100;
 
   &:hover,
   &:focus {
@@ -100,6 +103,10 @@
 .social {
   display: flex;
   justify-content: space-around;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 30px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -168,6 +175,11 @@
     font-size: 40px;
     line-height: 1.18;
   }
+  & .current {
+    @media screen and(max-width:767px) {
+      color: var(--accent);
+    }
+  }
 }
 
 .navigation {
@@ -223,10 +235,14 @@
   &:focus {
     color: var(--accent);
     fill: var(--accent);
-    @media screen and (max-width: 767px) {
-      font-size: 34px;
-    }
   }
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+}
+.contact-items-telmailto.number {
+  color: var(--accent);
 }
 .envelope {
   margin-right: 10px;

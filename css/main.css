@@ -130,17 +130,19 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
-    height: 100vp;
-    -webkit-transform: translateX(-50%), translateY(100%);
-            transform: translateX(-50%), translateY(100%);
+    z-index: 99;
+    height: 100vh;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    background-color: var(--white);
   }
-}
-
-.menu-container.is-open {
-  display: block;
-  -webkit-transform: translateX(-50%), translateY(0);
-          transform: translateX(-50%), translateY(0);
+  .menu-container.is-open {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -206,6 +208,7 @@ a {
   border: none;
   background-color: transparent;
   fill: currentColor;
+  z-index: 100;
 }
 
 .menu-button:hover, .menu-button:focus {
@@ -234,6 +237,9 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -315,6 +321,12 @@ a {
   .link {
     font-size: 40px;
     line-height: 1.18;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .link .current {
+    color: var(--accent);
   }
 }
 
@@ -413,9 +425,14 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .contact-items-telmailto:hover, .contact-items-telmailto:focus {
+  .contact-items-telmailto {
     font-size: 34px;
+    margin-bottom: 32px;
   }
+}
+
+.contact-items-telmailto.number {
+  color: var(--accent);
 }
 
 .envelope {
