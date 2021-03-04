@@ -1,6 +1,3 @@
-.page {
-  position: relative;
-}
 .headermenu {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -21,25 +18,28 @@
     height: 80px;
   }
 }
+
 .menu-container {
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 20px;
+    top: 0;
+    left: 0;
     width: 100%;
-
-    &.is-open {
-      display: block;
-      background-color: white;
-    }
+    z-index: 100;
+    height: 100vp;
+    transform: translateX(-50%), translateY(100%);
+  }
+  &.is-open {
+    display: block;
+    transform: translateX(-50%), translateY(0);
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    height: 60px;
+    padding: 0px;
   }
 }
 .logo {
@@ -123,27 +123,7 @@
     padding-left: 0px;
   }
 }
-.menu-container {
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
 
-    &.is-open {
-      display: block;
-      z-index: 2;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding: 0px;
-  }
-}
 .item {
   @media screen and(max-width:767px) {
     padding-top: 32px;
