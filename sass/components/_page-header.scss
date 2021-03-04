@@ -175,11 +175,6 @@
     font-size: 40px;
     line-height: 1.18;
   }
-  & .current {
-    @media screen and(max-width:767px) {
-      color: var(--accent);
-    }
-  }
 }
 
 .navigation {
@@ -242,7 +237,9 @@
   }
 }
 .contact-items-telmailto.number {
-  color: var(--accent);
+  @media screen and(max-width:767px) {
+    color: var(--accent);
+  }
 }
 .envelope {
   margin-right: 10px;
