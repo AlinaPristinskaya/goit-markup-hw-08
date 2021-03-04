@@ -15,64 +15,61 @@
 </head>
 
  <body class="page">
+    
+<header class="page-header">
     <div class="conteiner">
-        <header>
-    
-            <nav class="headermenu">
-                <div class="headr-line">
-                    
-                    <a href="./index.html" class="logo">Web<span class="logo-black">Studio</span></a>
-                <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="menu-container">
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="icon-cross" href="./icon/spritecrossmenu.svg#cross"></use>
-                        <use class="icon-menu" href="./icon/spritecrossmenu.svg#menu"></use>
-                
-                    </svg>
-                </button>
-
-
-                       
-
-                </div>
-    
-                <div class="menu-container" id="menu-container" data-menu>
-                    <ul class="navigation list">
-                        <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                        <li class="item"><a href="" class="link">Контакты</a></li>
-                    </ul>
-    
-    
-                    <ul class="contacts list">
-                        <li class="contact-items">
-    
-                            <a href="tel:" class="contact-items-telmailto">
-                                <svg class="itemsvg" width="10" height="16">
-                                    <use href="./icon/sprite.svg#smartphone"></use>
-                                </svg>
-    
-                                +38 096 111 11 11</a>
-                        </li>
-                        <li class="contact-items">
-    
-                            <a href="mailto:" class="contact-items-telmailto">
-                                <svg class="itemsvg" width="16" height="12">
-                                    <use href="./icon/sprite.svg#envelope"></use>
-                                </svg>
-                                info@devstudio.com</a>
-                        </li>
-    
-                    </ul>
-                    <ul class="social list">
-                       <li> <a href="" class="social-text">Instagram</a></li>
-                        <li><a href="" class="social-text">Twitter</a></li>
-                        <li><a href="" class="social-text">Facebook</a></li>
-                        <li><a href="" class="social-text">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <nav class="header__navigation">
+            <a href="#" class="logo"><span class="logo-accent">Web</span>Studio</a>
+            <ul class="header__list list">
+                <li class="header__item"><a href="#" class="header__link link header__link--current">Студия</a></li>
+                <li class="header__item"><a href="./portfolio.html" class="header__link link">Портфолио</a></li>
+                <li class="header__item"><a href="#" class="header__link link">Контакты</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="menu-button" data-menu-button>
+            <svg class="mob-menu-icon">
+                <use href="./icon/spritecrossmenu.svg#menu"></use>
+            </svg>
+        </button>
+        <ul class="contacts list">
+            <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link link">
+                    <svg class="contacts__icon" width="16" height="12">
+                        <use href="./icon/spritecrossmenu.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></li>
+            <li class="contacts__item"><a href="tel:380961111111" class="contacts__link link">
+                    <svg class="contacts__icon" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
     </div>
+    <div class="mobile-menu" data-menu>
+        <button class="mob-menu-btn-close" type="button" data-menu-close>
+            <svg class="mob-menu-icon-close">
+                <use href="./images/sprite.svg#icon-close-menu"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item"><a class="mobile-menu__link link" href="">Студия</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link link" href="">Контакты</a></li>
+        </ul>
+        <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__item"><a class="mobile-menu__tel-link link" href="tel:380961111111">+38 096 111 11
+                    11</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__mail-link link"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-menu__socials list">
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="#">Instagram</a></li>
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="#">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="#">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="#">LinkedIn</a></li>
+        </ul>
+
+    </div>
+
+</header>
+    
        <main>
     <section class="section-order">
         <div class="conteiner">
@@ -129,16 +126,23 @@
         <ul class="piople list">
         <li class="piople-elem">
                        
-            <img srcset="
-            ./image/igor-450.jpg 450w,
-            ./image/igor-900.jpg 900w,
-            ./image/igor-354.jpg 354w,
-            ./image/igor-708.jpg 708w,
-            ./image/igor-720.jpg 720w,
-            ./image/igor-540.jpg 540w,
-            " 
-            src="./image/igor-354.jpg" alt="На фото разработчик Игорь " class="piople-foto"
-            sizen="(min-width:1200px)25vw, (min-width:768px)50vw,100vw">
+            <picture>
+                <source srcset="./image/igor-270.webp 1x, ./image/igor-540.webp 2x"
+                    media="(min-width:1200px)" type="image/webp">
+                <source srcset="./image/igor-270.jpg 1x, ./image/igor-540.jpg 2x"
+                    media="(min-width:1200px)">
+            
+                <source srcset="./image/igor-354.webp 1x, ./image/igor-708.webp 2x"
+                    media="(min-width:768px)" type="image/webp">
+                <source srcset="./image/igor-354.jpg 1x, ./image/igor-708.jpg 2x"
+                    media="(min-width:768px)">
+            
+                <source srcset="./image/igor-450.webp 1x, ./image/igor-900.webp 2x"
+                    media="(min-width:320px)" type="image/webp">
+                <source srcset="./image/igor-450.jpg 1x, ./image/igor-900.jpg 2x"
+                    media="(min-width:320px)">
+                <img class="piople-foto" src="./image/igor-450.jpg" alt="фото Игоря Демьяненка">
+            </picture>
             <div class="card-comand">
             <h3 class="section-title name">Игорь Демьяненко</h3>
             <p class="profession">Product Designer</p>
@@ -185,14 +189,17 @@
 
         <li class="piople-elem">            
             
-            <img srcset="
-                        ./image/olga-450.jpg 450w,
-                        ./image/olga-900.jpg 900w,
-                        ./image/olga-354.jpg 354w,
-                        ./image/olga-708.jpg 708w,
-                        ./image/olga-720.jpg 720w,
-                        ./image/olga-540.jpg 540w,
-                        " src="./image/olga-354.jpg" alt="На фото разработчик Игорь " class="piople-foto">
+            <picture>
+                <source srcset="./image/olga-270.webp 1x, ./image/olga-540.webp 2x" media="(min-width:1200px)" type="image/webp">
+                <source srcset="./image/olga-270.jpg 1x, ./image/olga-540.jpg 2x" media="(min-width:1200px)">
+            
+                <source srcset="./image/olga-354.webp 1x, ./image/olga-708.webp 2x" media="(min-width:768px)" type="image/webp">
+                <source srcset="./image/olga-354.jpg 1x, ./image/olga-708.jpg 2x" media="(min-width:768px)">
+            
+                <source srcset="./image/olga-450.webp 1x, ./image/olga-900.webp 2x" media="(min-width:320px)" type="image/webp">
+                <source srcset="./image/olga-450.jpg 1x, ./imageolgar-900.jpg 2x" media="(min-width:320px)">
+                <img class="piople-foto" src="./image/olga-450.jpg" alt="фото Игоря Демьяненка">
+            </picture>
             <div class="card-comand">
             <h3 class="section-title name">Ольга Репина</h3>
             <p class="profession">Frontend Developer</p>
@@ -238,15 +245,17 @@
         <li class="piople-elem">
             
             
-            <img srcset="
-                        ./image/nikol-450.jpg 450w,
-                        ./image/nikol-900.jpg 900w,
-                        ./image/nikol-354.jpg 354w,
-                        ./image/nikol-708.jpg 708w,
-                        ./image/nikol-720.jpg 720w,
-                        ./image/nikol-540.jpg 540w,
-                        " src="./image/nikol-354.jpg" alt="На фото разработчик Игорь " class="piople-foto"
-                >
+        <picture>
+            <source srcset="./image/nikol-270.webp 1x, ./image/nikol-540.webp 2x" media="(min-width:1200px)" type="image/webp">
+            <source srcset="./image/nikol-270.jpg 1x, ./image/nikol-540.jpg 2x" media="(min-width:1200px)">
+        
+            <source srcset="./image/nikol-354.webp 1x, ./image/nikol-708.webp 2x" media="(min-width:768px)" type="image/webp">
+            <source srcset="./image/nikol-354.jpg 1x, ./image/nikol-708.jpg 2x" media="(min-width:768px)">
+        
+            <source srcset="./image/nikol-450.webp 1x, ./image/nikol-900.webp 2x" media="(min-width:320px)" type="image/webp">
+            <source srcset="./image/nikol-450.jpg 1x, ./image/nikol-900.jpg 2x" media="(min-width:320px)">
+            <img class="piople-foto" src="./image/nikol-450.jpg" alt="фото Игоря Демьяненка">
+        </picture>
                 <div class="card-comand">
             <h3 class="section-title name">Николай Тарасов</h3>
             <p class="profession">Marketing</p>
@@ -292,15 +301,17 @@
         <li class="piople-elem">
             
             
-            <img srcset="
-                        ./image/mihail-450.jpg 450w,
-                        ./image/mihail-900.jpg 900w,
-                        ./image/mihail-354.jpg 354w,
-                        ./image/mihail-702.jpg 702w,
-                        ./image/mihail-720.jpg 720w,
-                        ./image/mihail-540.jpg 540w,
-                        " src="./image/mihail-354.jpg" alt="На фото разработчик Игорь " class="piople-foto"
-                >
+        <picture>
+            <source srcset="./image/mihail-270.webp 1x, ./image/mihail-540.webp 2x" media="(min-width:1200px)" type="image/webp">
+            <source srcset="./image/mihail-270.jpg 1x, ./image/mihail-540.jpg 2x" media="(min-width:1200px)">
+        
+            <source srcset="./image/mihail-354.webp 1x, ./image/mihail-708.webp 2x" media="(min-width:768px)" type="image/webp">
+            <source srcset="./image/mihail-354.jpg 1x, ./image/mihail-708.jpg 2x" media="(min-width:768px)">
+        
+            <source srcset="./image/mihail-450.webp 1x, ./image/mihail-900.webp 2x" media="(min-width:320px)" type="image/webp">
+            <source srcset="./image/mihail-450.jpg 1x, ./image/mihail-900.jpg 2x" media="(min-width:320px)">
+            <img class="piople-foto" src="./image/mihail-450.jpg" alt="фото Игоря Демьяненка">
+        </picture>
                 <div class="card-comand">
             <h3 class="section-title name">Михаил Ермаков</h3>
             <p class="profession">UI Designer</p>
