@@ -351,6 +351,12 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navigation .item .current {
+    color: var(--accent);
+  }
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
