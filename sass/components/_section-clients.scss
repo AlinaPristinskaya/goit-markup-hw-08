@@ -12,6 +12,10 @@
   list-style: none;
   padding: 0px;
   margin-right: -15px;
+  @media screen and(min-width:1200px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .client {

@@ -89,6 +89,10 @@ a {
   }
 }
 
+.headrbord {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (min-width: 768px) {
   .headermenu {
     display: -webkit-box;
@@ -126,7 +130,7 @@ a {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -240,6 +244,7 @@ a {
   margin-top: 32px;
   margin-bottom: 32px;
   padding-left: 30px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -258,15 +263,18 @@ a {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--accent);
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.social-text:last-child {
-  border-right: none;
 }
 
 .social-text:first-child {
   padding-left: 0px;
+}
+
+.socialem {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.socialem:last-child {
+  border-right: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -333,12 +341,6 @@ a {
         -ms-flex-align: center;
             align-items: center;
     padding: 0px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .navigation {
-    padding-bottom: 300px;
   }
 }
 
@@ -469,6 +471,20 @@ a {
 @media screen and (max-width: 767px) {
   .itemsvg {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .absol {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .absollev {
+    position: absolute;
+    bottom: 85px;
   }
 }
 
@@ -825,6 +841,13 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .piople {
   width: 100%;
   display: block;
@@ -970,6 +993,12 @@ a {
 
 @media screen and (min-width: 1200px) {
   .zag {
+    padding-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team .zag {
     padding-bottom: 60px;
   }
 }
@@ -995,6 +1024,13 @@ a {
   list-style: none;
   padding: 0px;
   margin-right: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .cardclient {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .client {
@@ -1310,7 +1346,7 @@ a {
   margin-bottom: 0px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1522,12 +1558,20 @@ a {
           align-items: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2133,5 +2177,11 @@ textarea::-webkit-input-placeholder {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .card-title {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

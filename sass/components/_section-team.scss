@@ -2,6 +2,10 @@
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .piople {
   width: 100%;
@@ -118,6 +122,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  @media screen and(min-width:1200px) {
+    padding-bottom: 45px;
+  }
+}
+.section-team .zag {
   @media screen and(min-width:1200px) {
     padding-bottom: 60px;
   }
